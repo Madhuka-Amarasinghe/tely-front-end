@@ -1,36 +1,38 @@
 import React from 'react';
 import {
     Navbar,
-    Nav,
-    NavDropdown,
-    Form,
-    FormControl,
-    Button
+    Container,
+    InputGroup, FormControl, Nav
 } from 'react-bootstrap';
+
 
 const Header = () => (
     <>
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">TELY-CORE</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Product</Nav.Link>
-                    <NavDropdown title="Products" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown>
+
+
+        <Navbar>
+            <Container>
+                <Nav>
+                    <Nav.Link href="/product-list">COTHING</Nav.Link>
+                    <Nav.Link href="/product-list">DRESSES</Nav.Link>
+                    <Nav.Link href="/product-list">BEACHWEAR</Nav.Link>
+                    <Nav.Link href="/product-list">SHOES & ACCESSORIES</Nav.Link>
+                    <Nav.Link href="/product-list">BEATY</Nav.Link>
                 </Nav>
-                <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-success">Search</Button>
-                </Form>
-            </Navbar.Collapse>
+                <InputGroup className="left" size="sm">
+                    <InputGroup.Prepend>
+                        <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl
+                        placeholder="Search"
+                        aria-label="Search"
+                        aria-describedby="basic-addon1"
+                    />
+                </InputGroup>
+            </Container>
         </Navbar>
+
+
     </>
 );
 

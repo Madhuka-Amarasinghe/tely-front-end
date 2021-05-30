@@ -9,6 +9,7 @@ import Image from '../images/adidas.jpg';
 import SliderTwo from '../images/slider-img.jpg';
 import SliderOne from '../images/slider-img-1.jpg';
 import SliderThree from '../images/slider-img-2.jpg';
+import Slidernew from '../images/slidernew.png';
 
 const HomePage = () => (
     <>
@@ -17,7 +18,7 @@ const HomePage = () => (
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={SliderOne}
+                    src={Slidernew}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -28,7 +29,7 @@ const HomePage = () => (
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={SliderTwo}
+                    src={Slidernew}
                     alt="Second slide"
                 />
 
